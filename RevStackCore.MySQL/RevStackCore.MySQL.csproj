@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <Description>MySQL implementation of the RevStackCore repository pattern.</Description>
+    <Authors>David Sheets</Authors>
+    <Copyright>Copyright 2017</Copyright>
+    <PackageTags>RevStackCore Repository MySQL</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.FastCrud" Version="2.4.1" />
+    <PackageReference Include="MySqlConnector" Version="0.19.5" />
+    <PackageReference Include="RevStackCore.Extensions" Version="1.0.4" />
+    <PackageReference Include="RevStackCore.Pattern" Version="1.0.5" />
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
