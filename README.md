@@ -1,6 +1,6 @@
 # RevStackCore.MySQL
 
-
+[![Build status](https://ci.appveyor.com/api/projects/status/bxd5qs4w2tcbw98t?svg=true)](https://ci.appveyor.com/project/tachyon1337/mysql)
 
 
 # Usage
