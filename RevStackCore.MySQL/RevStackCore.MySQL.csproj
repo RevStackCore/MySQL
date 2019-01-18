@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DbContext\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RevStackCore.Pattern.SQL" Version="1.0.0" />
+    <PackageReference Include="RevStackCore.SQL.Client" Version="1.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+  </ItemGroup>
+</Project>
