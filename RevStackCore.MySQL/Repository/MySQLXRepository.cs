@@ -18,7 +18,7 @@ namespace RevStackCore.MySQL
         private readonly TypedClient<TEntity, MySqlConnection, TKey> _typedClient;
         public MySQLXRepository(MySQLDbContext context)
         {
-            _typedClient = new TypedClient<TEntity, MySqlConnection, TKey>(context.ConnectionString, SQLLanguageType.SQLServer);
+            _typedClient = new TypedClient<TEntity, MySqlConnection, TKey>(context.ConnectionString, SQLLanguageType.MySQL);
         }
 
         public TEntity Add(TEntity entity)
