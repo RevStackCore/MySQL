@@ -1,6 +1,6 @@
 {
   "name": "RevStackCore.MySQL",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "MySQL implementation of the RevStackCore repository pattern",
   "main": "RevStackCore.MySQL.sln",
   "scripts": {
