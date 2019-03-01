@@ -191,7 +191,7 @@ Not all linq extension methods are currently supported. Apply a ToList() in such
 # Usage
 
 ## MySQLDbContext
-Inject an instance of MySQLDbContext with the sql server connection string passed in the constructor.
+Inject an instance of MySQLDbContext with the my sql connection string passed in the constructor.
 ```cs
 var dbContext = new MySQLDbContext(connectionString);
 ```
