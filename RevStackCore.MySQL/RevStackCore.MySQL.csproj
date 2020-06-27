@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RevStackCore.MySQL</PackageId>
-    <PackageVersion>2.2.4</PackageVersion>
+    <PackageVersion>2.2.5</PackageVersion>
     <Authors>David Sheets, S. Francis</Authors>
     <Description>MySQL implementation of the RevStack Repository Pattern.</Description>
     <PackageProjectUrl>https://github.com/RevStackCore/MySQL.git</PackageProjectUrl>
@@ -22,7 +22,7 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RevStackCore.SQL.Client" Version="1.1.2" />
+    <PackageReference Include="RevStackCore.SQL.Client" Version="1.2.0" />
     <PackageReference Include="RevStackCore.Pattern.SQL" Version="1.1.2" />
     <PackageReference Include="MySqlConnector" Version="0.69.2" />
   </ItemGroup>
