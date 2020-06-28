@@ -145,7 +145,7 @@ private static void RegisterTables(MySQLDbContext db)
 RegisterTable is not a database migrations implementation tool. It only operates on the specified table by executing a metadata schema comparison between an existing DB Table and the corresponding POCO type. At a minimum, the underlying Database must exist. If the table does not exist in the database, RegisterTable will CREATE the table,as well as the annotated primary keys and indexes.  If the Db Table exists, RegisterTable will only run a ALTER Table schema change on POCO properties that DO NOT have a corresponding column match in the Db Table. By design, RegisterTable will neither modify nor delete columns in the existing Db table schema. Nor will it remove existing indexes or keys. In short, if you add a property to your POCO, RegisterTable will add it to the Db Table schema. But if you modify or a delete a POCO property, RegisterTable will not correspondingly change the Db Table schema. You will have to manually update the schema in the database. Additionally, RegisterTable will not change the primary key constraints for an existing table schema. Lastly, Foreign keys are not supported at all and will have to be set manually.
 
 ## Enforce Class Name to Table Name Mapping
-Unfortunately, table pluralization on inserts/updates is a default behavior of Dapper.Contrib that has not of yet been removed from the RevStackCore implementation. Override this with one line at startup.
+Call SQLExtensions.SetTableNameMapper() in the program or startup file to ensure a correct class name to table name(or Table Attrubute name) mapping.
 
 ```cs
 using RevStackCore.SQL.Client
@@ -187,6 +187,26 @@ Not all linq extension methods are currently supported. Apply a ToList() in such
  int count=result.ToList().Count();
  ```
 
+## Table, Column Attributes
+RevStackCore.MySQL supports Table Attributes for entities
+ and Column Attribute for properties.
+```cs
+using RevStackCore.DataAnnotations
+using RevStackCore.Pattern;
+
+[Table("my_table")]
+public class MyTable : IEntity<int>
+{
+    [PrimaryKey]
+    [AutoIncrement]
+    [Column("id")]
+    public int Id {get; set;}
+    [Column("first_name")]
+    public string FirstName {get; set;}
+}
+```
+
+Call SQLExtensions.SetTableNameMapper(true) in the startup to ensure the correct mapping of entity types and property names. Set the optional param to true if mapping Entity proper case to Table snake case.
 
 # Usage
 

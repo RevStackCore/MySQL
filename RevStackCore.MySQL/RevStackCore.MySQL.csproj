@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RevStackCore.MySQL</PackageId>
-    <PackageVersion>2.2.7</PackageVersion>
+    <PackageVersion>2.2.8</PackageVersion>
     <Authors>David Sheets, S. Francis</Authors>
-    <Description>MySQL implementation of the RevStack Repository Pattern.</Description>
+    <Description>MySQL implementation of the RevStackCore Repository Pattern.</Description>
     <PackageProjectUrl>https://github.com/RevStackCore/MySQL.git</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/RevStackCore/MySQL/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://s3.amazonaws.com/revstack/icons/revstackcore-64x64.png</PackageIconUrl>
@@ -21,7 +21,7 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="RevStackCore.SQL.Client" Version="1.2.2" />
+    <PackageReference Include="RevStackCore.SQL.Client" Version="1.2.3" />
     <PackageReference Include="RevStackCore.Pattern.SQL" Version="1.1.2" />
     <PackageReference Include="MySqlConnector" Version="0.69.2" />
   </ItemGroup>
