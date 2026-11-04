@@ -23,6 +23,6 @@
   <ItemGroup>
     <PackageReference Include="RevStackCore.SQL.Client" Version="1.2.4" />
     <PackageReference Include="RevStackCore.Pattern.SQL" Version="1.1.2" />
-    <PackageReference Include="MySqlConnector" Version="2.3.7" />
+    <PackageReference Include="MySqlConnector" Version="2.6.1" />
   </ItemGroup>
 </Project>
